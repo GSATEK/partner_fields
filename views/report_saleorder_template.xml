@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="report_saleorder_document_inherit_external_reference" inherit_id="sale.report_saleorder_document">
-        <xpath expr="//div[@name='your_reference']" position="after">
+        <xpath expr="//div[@name='expiration_date']" position="after">
             <div class="col-auto col-3 mw-100 mb-2" name="external_reference">
                 <strong>Referencia Externa:</strong>
                 <p class="m-0" t-field="o.partner_external_reference"/>
