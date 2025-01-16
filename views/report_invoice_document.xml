@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit_external_reference" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@name='reference']" position="after">
+            <div class="col-auto col-2 mw-100 mb-2" name="external_reference">
+                <strong>Referencia Externa:</strong>
+                <p class="m-0" t-field="o.partner_external_reference"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
+
+
